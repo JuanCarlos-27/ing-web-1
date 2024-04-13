@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #4f4f4f;
+  --secondary-color: #e6edee;
+  --white-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-size: 14px 24px;
+  mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 70%, transparent 110%);
+  z-index: -3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: dense;
+  gap: 1rem;
+  margin: auto;
+  height: 100%;
+  max-width: 110ch;
+  padding: 10px;
+
+  /* Estilos para el encabezado */
+  > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
+
+    > ul {
+      display: flex;
+      gap: 1rem;
+
+      > li {
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        a {
+          font-size: 17px;
+          padding: 10px 25px;
+          border-radius: 10px;
+          background-color: var(--secondary-color);
+          transition: all 0.2s ease-in-out;
+        }
+
+        a:hover,
+        a.active {
+          background-color: var(--primary-color);
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+
+  /* Estilos para la sección de la introducción */
+  > .introduction-section {
+    grid-column: 1 / 2;
+  }
+
+  /* Estilos para la sección de la teoría */
+  > .theory-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    > img {
+      width: 350px;
+      height: 350px;
+      border-radius: 10px;
+    }
+  }
+
+  /* Estilos para la sección del embed del video */
+  > .video-section {
+    grid-column: 1 / 2;
+
+    #video {
+      border-radius: 10px;
+      width: 100%;
+      height: 315px;
+    }
+    > p {
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      opacity: 0.8;
+      margin-bottom: 20px;
+      font-style: italic;
+      margin-top: 10px;
+    }
+  }
+
+  /* Estilos para la sección de los principios y características */
+  > .principles-section {
+    grid-column: 1 / 3;
+    > ul {
+      display: grid;
+      justify-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 3rem;
+
+      > li {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr;
+        gap: 10px;
+
+        h4 {
+          background-color: #efff13cc;
+          transform: skew(-10deg);
+          border-radius: 20px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  /* Estilos para la sección de los consejos */
+  > .tips-section {
+    grid-column: 1 / 3;
+
+    .tips-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 1rem;
+      margin-top: 30px;
+
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        max-width: 700px;
+        margin: auto;
+        margin-bottom: 20px;
+
+        p {
+          font-size: 1.2rem;
+          text-align: center;
+          text-wrap: balance;
+        }
+
+        img {
+          width: 80%;
+          height: 300px;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  /* Estilos para la sección de las referencias */
+  > .references-section {
+    grid-column: 1 / 2;
+
+    > ul {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    > ul li a {
+      display: block;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      border-radius: 10px;
+      padding: 10px 20px;
+      background-color: var(--secondary-color);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+      }
+    }
+  }
+
+  /* Estilos para el pie de página */
+  > footer {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 30px 10px;
+  }
+}
+
+.card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 30px 40px;
+  border: 1px solid #000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 10px;
+
+    > header {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        > li {
+          a {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+
+    > .introduction-section {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    > .theory-section {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    > .video-section {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+    }
+
+    > .principles-section {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+    }
+
+    > .five-section {
+      grid-column: 1 / 2;
+      grid-row: 6 / 7;
+      width: 100%;
+    }
+
+    > .command-section {
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+      flex-direction: row;
+      align-self: center;
+      justify-self: center;
+    }
+
+    > footer {
+      grid-column: 1 / 2;
+      grid-row: 8 / 9;
+    }
+  }
+}
