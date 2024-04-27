@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definición y características de HTML 5<</title>
+    <!-- Este es el enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      :root {
+        --primary-color: #252525;
+        --secondary-color: #e97f38;
+        --white-color: #fff;
+        --highlighter-color: #ffe713cc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Este elemento da el background a la página -->
+    <div class="background"></div>
+
+    <!-- Este es el contenido principal de la página -->
+    <main class="container" id="top">
+      <!-- Este es el header de la página, contiene el menú de navegación -->
+      <header class="card">
+        <ul>
+          <li><a class="active" href="#introduction-section">Inicio</a></li>
+          <li><a href="#principles-section">Características</a></li>
+          <li><a href="#tips-section">Etiquetas HTML 5</a></li>
+          <li><a href="#references-section">Referencias</a></li>
+        </ul>
+      </header>
+
+      <!-- Esta es la sección donde se muestra el titulo principal y el subtitulo de la página -->
+      <section class="card introduction-section">
+        <h1>Definición y características de HTML 5</h1>
+        <p>
+          En este sitio web encontrarás información sobre la definición y características de HTML 5.
+          Asi como también, las etiquetas más importantes que deberias usar en tu web.
+        </p>
+      </section>
+
+      <!-- Esta es la sección donde se introduce el tema de la página -->
+      <section class="card theory-section">
+        <img
+          src="/assets/html-logo.png"
+          alt="Imagen de la etiqueta HTML"
+          title="Imagen de la etiqueta HTML" />
+
+        <article>
+          <h2>¿Qué es HTML?</h2>
+          <p>
+            HTML, o HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el estándar
+            utilizado para crear y estructurar páginas web. Es un lenguaje de marcado que define la
+            estructura básica de una página web, utilizando etiquetas para organizar y presentar
+            contenido como texto, imágenes, videos, enlaces, entre otros elementos.
+          </p>
+        </article>
+      </section>
+
+      <!-- Esta es la sección donde se muestra el video de la página -->
+      <section class="card video-section">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2_BK2BMl_BU?si=tZpu4XqkShW1nzYQ"
+          title="Video de elaboración propia sobre elementos de una página HTML 5"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+
+        <p>
+          * Este video es una elaboración propia creada con el propósito de explicar la importancia
+          de HTML y sus etiquetas en la creación de páginas web.
+        </p>
+      </section>
+
+      <!-- Esta es la sección donde se explica el significado de la versión 5 de HTML -->
+      <section class="card explain-section">
+        <article>
+          <h2>¿Qué significa que sea "5"?</h2>
+          <p>
+            La especificación HTML5 es la quinta revisión importante del lenguaje básico de la World
+            Wide Web, el HTML. Aunque la "5" no se refiere a una versión específica de HTML, sino
+            más bien a una evolución continua del estándar, se adoptó el nombre "HTML5" como una
+            forma simple de referirse a esta versión más moderna y avanzada del lenguaje de marcado.
+          </p>
+          <br />
+          <p>
+            HTML5 introdujo una serie de nuevas características y funcionalidades destinadas a
+            mejorar la experiencia de desarrollo web y la interoperabilidad entre navegadores.
+            Algunas de las adiciones más significativas incluyen elementos semánticos para una mejor
+            estructuración del contenido, capacidades de reproducción de audio y video sin necesidad
+            de complementos externos, capacidades de gráficos 2D y 3D junto con WebGL, entre muchas
+            otras.
+          </p>
+        </article>
+        <img
+          src="/assets/question-mark.png"
+          width="50"
+          height="100"
+          alt="Imagen de la etiqueta HTML"
+          title="Imagen de la etiqueta HTML" />
+      </section>
+
+      <!-- Esta es la seción donde se listan las características de HTML 5 -->
+      <section class="card principles-section" id="principles-section">
+        <h2>Características de HTML 5</h2>
+        <ul></ul>
+      </section>
+
+      <!-- Esta es la sección donde se listan las etiquetas más importantes de HTML 5 -->
+      <section class="card tips-section" id="tips-section">
+        <h2>Principales etiquetas de HTML 5</h2>
+        <div class="tips-content"></div>
+      </section>
+
+      <!-- Esta es la sección donde se listan las referencias de la página -->
+      <section class="card references-section" id="references-section">
+        <h2>Referencias</h2>
+        <ul></ul>
+      </section>
+
+      <!-- Este es el footer de la página, contiene información sobre el autor y la fecha de creación -->
+      <footer class="card">
+        <p>© 2024 Creado por Juan C. Romero - Página web dinámica sobre HTML 5</p>
+      </footer>
+    </main>
+
+    <!-- Este botón que permite volver al inicio de la página -->
+    <a href="#top" hidden class="go-top">🔼</a>
+  </body>
+
+  <script src="/scripts/html-concepts.js"></script>
+</html>

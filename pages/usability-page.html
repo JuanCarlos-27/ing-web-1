@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teoría, usabilidad y desarrollo de aplicaciones web</title>
+    <!-- Este es el enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      :root {
+        --primary-color: #4f4f4f;
+        --secondary-color: #e6edee;
+        --white-color: #fff;
+        --highlighter-color: #efff13cc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Este elemento da el background a la página -->
+    <div class="background"></div>
+
+    <!-- Este es el contenido principal de la página -->
+    <main class="container" id="top">
+      <!-- Este es el header de la página, contiene el menú de navegación -->
+      <header class="card">
+        <ul>
+          <li><a class="active" href="#introduction-section">Inicio</a></li>
+          <li><a href="#principles-section">Características</a></li>
+          <li><a href="#tips-section">Tips</a></li>
+          <li><a href="#references-section">Referencias</a></li>
+        </ul>
+      </header>
+
+      <!-- Esta es la sección donde se muestra el titulo principal y el subtitulo de la página -->
+      <section class="card introduction-section">
+        <h1>Teoría, usabilidad y desarrollo de aplicaciones web</h1>
+        <p>
+          En este sitio web encontrarás información sobre la teoría, usabilidad y desarrollo de
+          aplicaciones web.
+        </p>
+      </section>
+
+      <!-- Esta es la sección donde se introduce el tema de la página -->
+      <section class="card theory-section">
+        <img
+          src="/assets/usability-image.png"
+          alt="Imagen ilustrativa de usabilidad en aplicaciones web"
+          title="Usabilidad en aplicaciones web" />
+
+        <article>
+          <h2>¿Qué es la usabilidad en aplicaciones web?</h2>
+          <p>
+            La usabilidad en aplicaciones web es la capacidad que tiene una aplicación para ser
+            utilizada de manera eficiente, efectiva y satisfactoria por los usuarios.
+          </p>
+          <br />
+          <p>
+            Para lograr una buena usabilidad en una aplicación web, es necesario que esta sea fácil
+            de usar, que permita a los usuarios realizar sus tareas de manera rápida y sencilla, y
+            que ofrezca una experiencia agradable y satisfactoria.
+          </p>
+        </article>
+      </section>
+
+      <!-- Esta es la sección donde se muestra el video sobre usabilidad en aplicaciones web -->
+      <section class="card video-section">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/p2tHd_83bZg?si=OQFcZ3BA91F0eXAd"
+          title="Video sobre usabilidad en aplicaciones web"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+
+        <p>
+          * Este video es una elaboración propia creada con el propósito de explicar la importancia,
+          principios, características y algunas estrategias para mejorar la usabilidad en
+          aplicaciones web.
+        </p>
+      </section>
+
+      <!-- Esta es la sección donde se listan los principios y características de la usabilidad web -->
+      <section class="card principles-section" id="principles-section">
+        <h2>Principios y características de la usabilidad web</h2>
+        <ul></ul>
+      </section>
+
+      <!-- Esta es la sección donde se listan los tips para mejorar la usabilidad de una aplicación web -->
+      <section class="card tips-section" id="tips-section">
+        <h2>¿Como mejorar la usabilidad de tu aplicación web?</h2>
+        <div class="tips-content"></div>
+      </section>
+
+      <!-- Esta es la sección donde se listan las referencias de la página -->
+      <section class="card references-section" id="references-section">
+        <h2>Referencias</h2>
+        <ul></ul>
+      </section>
+
+      <!-- Este es el footer de la página, contiene información sobre el autor y la fecha de creación -->
+      <footer class="card">
+        <p>
+          © 2024 Creado por Juan C. Romero - Teoría, usabilidad y desarrollo de aplicaciones web.
+        </p>
+      </footer>
+    </main>
+
+    <!-- Este botón que permite volver al inicio de la página -->
+    <a href="#top" hidden class="go-top">🔼</a>
+  </body>
+
+  <script src="/scripts//usability.js"></script>
+</html>
